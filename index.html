@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一个网站</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #202938;
+    }
+
+    main {
+      width: min(90%, 520px);
+      padding: 40px;
+      text-align: center;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px #00000012;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>我的第一个网站</h1>
+    <p>这个网页已经准备好发布到互联网上了。</p>
+    <button id="helloButton">点我试试</button>
+  </main>
+
+  <script>
+    document.querySelector("#helloButton").addEventListener("click", () => {
+      alert("你好！按钮可以正常工作。");
+    });
+  </script>
+</body>
+</html>
